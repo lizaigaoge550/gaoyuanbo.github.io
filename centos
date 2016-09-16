@@ -1,4 +1,1 @@
-# centos 安装g++ #
-yum install gcc.x86_64
-安装prel-xml-Parser
-yum install *XML*
+<p style='color:red'> centos 安装g++ </p> 
