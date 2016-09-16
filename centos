@@ -1,0 +1,4 @@
+centos 安装g++
+yum install gcc.x86_64
+安装prel-xml-Parser
+yum install *XML*
