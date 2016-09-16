@@ -59,6 +59,7 @@ os.system(cmd) 例如: cmd命令(重命名命令)一般是 ren "fff" "dfdf" 文�
 * os.walk(root) 参数根目录 返回3个参数 第一个是路径，第二个是路径下面的目录，第三个是路径下面的非目录（也就是文件）
 * os.listdir(root)  os.isfile()
 
-
+##python正则表达式
+re.split('\\s+',字符串)
 
 
