@@ -47,4 +47,14 @@ raw = 先抽取词
     * countByKey 
     * foreach
   
-  
+  ##spark 缓存
+ * 计算特别耗时
+ * 计算链条很长
+ * shuffle之后---shuffle从其他地方抓数据，要缓存下，如果后面阶段失败，从这个缓存阶段开始
+ * checkpoint之前---一个作业执行完后，另一个作业开始前要checkpoint,缓存完这个作业的结果在进行下一个作业
+ * 缓存不一定可靠因为缓存在内存中，checkpoint可靠。因为checkpoint在磁盘中
+ * partition 会放在spark不同机器的节点上
+ * partition一个特定的数据集合 大小默认是hdfs一个block的大小
+ * Node local 本地磁盘
+ * Process local 本地内存
+ * Any 从其他机器shuffle来的数据
