@@ -50,7 +50,30 @@
   \end{algorithmic}
 * \end{algorithm}
 
+#latex调整字体大小
+* http://blog.sina.com.cn/s/blog_5e16f1770100o3kp.html
+* 调出左边框
+* jpg转eps
 
+
+	* ![iamge](latex.jpg)
+	* bmeps -c(进行彩色转换) example.jpg example.eps
+
+# 调整图片注释居中
+* {figure*}[!htbp]
+* 图片 ~\ref{fig1}
+* 表格 ~\ref{tab1}
+* 公式 ~\ref{eq:1}
+* 公式对齐
+	* \begin{aligned}
+		 
+		&.....\\ 
+
+		&..... 
+	
+		\end{aligned}
+
+* 输入法文字符 \" e
 
 
 
