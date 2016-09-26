@@ -58,3 +58,5 @@ raw = 先抽取词
  * Node local 本地磁盘
  * Process local 本地内存
  * Any 从其他机器shuffle来的数据
+
+ #spark运行原理图
