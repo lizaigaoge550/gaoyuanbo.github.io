@@ -59,4 +59,5 @@ raw = 先抽取词
  * Process local 本地内存
  * Any 从其他机器shuffle来的数据
 
- #spark运行原理图
+ ##spark运行原理图
+ * ![iamge](spark 原理.png)
