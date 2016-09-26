@@ -60,6 +60,7 @@ os.system(cmd) 例如: cmd命令(重命名命令)一般是 ren "fff" "dfdf" 文�
 * os.listdir(root)  os.isfile()
 
 ##python正则表达式
-re.split('\\s+',字符串)
+* re.split('\\s+',字符串)
+* 找到一个字符串中所有数字 re.findall('[0-9]+',string)
 
 
