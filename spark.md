@@ -61,3 +61,20 @@ raw = 先抽取词
 
  ##spark运行原理图
  * ![iamge](spark 原理.png)
+
+ ## RDD（Resillent Distributed Dataset）
+ * RDD是基于工作集的
+ * RDD的弹性表现
+    * 自动进行内存与磁盘数据存储和转换
+    * 基于Lineage的高容错
+    * Task如果失效会自动进行特定次数的重试
+    * stage如果失败会自动进行特定次数的重试
+    * checkpoint 和 persist
+    * 数据调动弹性: DAG TASK和资源管理无关
+    * 数据分片的弹性
+      * 当partition很大，内存很小 partition调大。 例如 10000分片要变为1000分片:条用coalesce默认的shuffle为False, repartition默认shuffle为True
+      * 当partition很小时，要把partition调大. 例如1000分片变为100000分片.这个过程一般要shuffle
+  * 可以把RDD看成一个list or array
+  * RDD通过记录数据更新的方式为何很高效
+    * RDD是不可变的  + lazy
+    * RDD是粗粒度的---RDD写操作是粗粒度的，读操作既可以是粗粒度也可以是细粒度
