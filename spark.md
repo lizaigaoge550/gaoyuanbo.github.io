@@ -78,3 +78,25 @@ raw = 先抽取词
   * RDD通过记录数据更新的方式为何很高效
     * RDD是不可变的  + lazy
     * RDD是粗粒度的---RDD写操作是粗粒度的，读操作既可以是粗粒度也可以是细粒度
+
+  * 每个RDD 在计算的时候都返回一个iterator对象
+	  ![iamge](sparkrdd.png)
+	
+	让所有的框架无缝集成
+  * Java 不能调用子类接口而spark可以调用RDD子类方法由于(this.type)很强大
+
+	  this.type 运行时支持, this.type 返回的接口会指向具体子类
+
+  * 设置并行度，local模式下, spark就看集群中有多少core就用多少core
+  * 最佳策略 spark并行度:每个core可以承载2-4个partition
+  * 执行task的位置, 本地优先, 当触发job时(action触发), DAGScheduler调用submitMissingTasks 有一个taskIdToLocations,(id,getPrefereredLocs)决定      task的位置 
+	* 若该RDD被缓存了,就直接取
+	* 若RDD有preferredLocations（就是blockManager来管理,本地优先）
+		![iamge](getlocation.png)
+	
+		
+		![iamge](getlocation1.png)
+	
+	* 若RDD是窄依赖，选择第一个窄依赖的第一个partition
+	* partition的大小按理说应该是一个block大小(128M)但是最后一个partition可
+		能跨两个block，所以一个partition的大小略小于或大于一个partition的大小
