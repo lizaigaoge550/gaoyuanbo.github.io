@@ -3,6 +3,9 @@
 * 全局设置 \usepackage{parskip}
 * 换行 \medskip 不只是单倍行距
 
+# 安装宏包
+* 直接下载相应的.sty文件放到所在的文章目录下进行编译就可
+
 #输入中文
 * Document-->Document Setting-->format
 * 选择utf8编码
