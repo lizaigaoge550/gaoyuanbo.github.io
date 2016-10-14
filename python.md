@@ -81,4 +81,11 @@ os.system(cmd) 例如: cmd命令(重命名命令)一般是 ren "fff" "dfdf" 文�
 * tile 复制元素
 * where(condition,x,y) if condition x else y
 
+##itertool
+* chain('ABC','DEF') ---> A B C D E F
+* from_iterable(['ABC','DEF']) ----> A B C D E F
+* combinations('ABCD',2) -----> AB AC AD BC BD CD
+* combinations_with_replacement('ABC',2) ------> AA AB AC BB BC CC
+* compress('ABCDEF',[1,0,1,0,1,1]) ------> A C E F
+* cycle('ABCD') -----> A B C D A B C D ......
 
