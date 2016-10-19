@@ -79,7 +79,7 @@ os.system(cmd) 例如: cmd命令(重命名命令)一般是 ren "fff" "dfdf" 文�
   hstack 相当于 concatenate(axis=1) 如hstack(([1,2,3],[1,2,3])) => [1,2,3,1,2,3]注意这里是一维. r_相当于vstack 但是不同于vstack的是先用最小维   度 即 r_[[1,2,3],[1,2,3]] => [[1,2,3,1,2,3]] 若想变成[[1,2,3],[1,2,3]] r._['0,2'] 0代表行扩展, 2是2维
 * 删除数组中某几行或几列 np.delete(数组,元素,axis)
 * tile 复制元素
-* where(condition,x,y) if condition x else y
+* where(condition,x,y) if condition x else y 返回的是tuple 类型
 
 ##itertool
 * chain('ABC','DEF') ---> A B C D E F
