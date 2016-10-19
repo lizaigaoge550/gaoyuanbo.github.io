@@ -80,6 +80,7 @@ os.system(cmd) 例如: cmd命令(重命名命令)一般是 ren "fff" "dfdf" 文�
 * 删除数组中某几行或几列 np.delete(数组,元素,axis)
 * tile 复制元素
 * where(condition,x,y) if condition x else y 返回的是tuple 类型
+* savetxt 注意要把数组先整成int or float 否则可能汇报格式化的错误
 
 ##itertool
 * chain('ABC','DEF') ---> A B C D E F
