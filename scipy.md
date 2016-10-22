@@ -8,4 +8,9 @@
     points_index = point_tree.query_ball_point(x,r)
     
     points = all[np.array(points_index,dtype=int),:]
-  
+  ```
+## 计算欧氏距离
+```python
+  from scipy.spatial import distance
+  distance..euclidean(poin_2t,point_1)
+  ```
