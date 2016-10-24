@@ -35,6 +35,8 @@ name = x1.sheet_names
 假如DataFrame v有一列叫pid 有一个list 保留出现在list中的pid的那些行
 v[v.pid.isin(list)]
 
+保留出现在list中pandas的那些列 , df.loc[:,df.columns.isin(l)]
+
 ##os 执行 cmd命令
 
 os.system(cmd) 例如: cmd命令(重命名命令)一般是 ren "fff" "dfdf" 文件名是有引号的 所以在python中这条命令应该是
