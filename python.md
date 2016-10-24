@@ -30,10 +30,25 @@ name = x1.sheet_names
   * pandas.from_dict(dict,orient = "columns") orient = 'columns'是key作为列 'rows'key作为行
 修改列名 DataFrame.columns = ['','']必须是list
 
-##pandas 删除行
 
-假如DataFrame v有一列叫pid 有一个list 保留出现在list中的pid的那些行
-v[v.pid.isin(list)]
+##pandas 操作
+ * 选择列 obj[val]  or obj.ix[:,val]
+ * 选择行 obj.ix[val]
+ * 同时选择行和列 obj.ix[val1,val2]
+ * 属性 fill_value 填充缺失值 method = ffill or pad 前向填充 method = bfill or backfill 后向填充
+ * df.fillna(val) 填充缺失值 可以是一个值，也可以是字典key是column名 value 是该列要填充的值
+
+##pandas 删除行
+ * 假如DataFrame v有一列叫pid 有一个list 保留出现在list中的pid的那些行
+  v[v.pid.isin(list)]
+ * df.drop(val1) 默认val1 是行的名字  drop(val2,axis=1) 是删除列
+ * df.dropna() 只要行中出现NaN 删除该行,  参数 how='all' 行全部为NaN才删除  axis=1 表示对列操作.
+ 
+##pandas 排序
+ * series.sort_index() or   df.sort_index() 按index排序. 注:df可以加参数 axis=1表示按column排序; ascending=False 降序; by='val'。val用来指定   按某个列排序
+ 
+ 
+ 
 
 保留出现在list中pandas的那些列 , df.loc[:,df.columns.isin(l)]
 
@@ -69,6 +84,10 @@ os.system(cmd) 例如: cmd命令(重命名命令)一般是 ren "fff" "dfdf" 文�
 * pd.read_csv().values仅仅只会忽略第一行，不会忽略第一列
 * df.ix[] 用来选择行和列
 * pd.Index(series).get_loc()获取位置
+
+## pandas 合并数据集
+* pd.merge(df1,df2) 默认是将重叠列的列名当作键
+* pd.concat([df1,df2],axis=1) 可以选择方向合并
 
 ##numpy
 * bincount来记录元素的个数. 例如bincount([0,0,1,1,2,3,4]) 结果[2,2,1,1,1]
