@@ -14,3 +14,10 @@
   from scipy.spatial import distance
   distance..euclidean(poin_2t,point_1)
   ```
+  
+![](http://latex.codecogs.com/gif.latex?\\frac{\\partial J}{\\partial \\theta_k^{(j)}})
+
+
+
+
+
