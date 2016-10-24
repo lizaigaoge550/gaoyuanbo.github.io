@@ -4,4 +4,9 @@
 使用尽可能多的数据进行训练. 然而如果测试集很小, 它对预测表现的估计就会有一定的噪声，解决这种情况的方法就是交叉验证
 
 ##信息熵
+![](http://latex.codecogs.com/gif.latex?H[p] = -\\sum_{i}p(x_i)\\ln^{p(x_i)})
+
+
+![](http://latex.codecogs.com/gif.latex?\\hat{H}=-\\sum_{i}p(x_i)\\ln^{p(x_i)}+\\lambda(\\sum_{i}p(x_i)-1))
+
 
