@@ -69,7 +69,7 @@ os.system(cmd) 例如: cmd命令(重命名命令)一般是 ren "fff" "dfdf" 文�
 * list.find(item) 类似与index
 * 两个list相加 list1 + list2
 * 添加元素 list.append() list.extend() 两者是不一样的 extend相当于flatMap
-* 统计个数 list.count()
+* 统计个数 list.count(item) 该item是list中的元素
 
 ##python 遍历文件的2中方法
 
