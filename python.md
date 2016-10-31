@@ -114,3 +114,10 @@ os.system(cmd) 例如: cmd命令(重命名命令)一般是 ren "fff" "dfdf" 文�
 * compress('ABCDEF',[1,0,1,0,1,1]) ------> A C E F
 * cycle('ABCD') -----> A B C D A B C D ......
 
+##pandas Tuple
+* 向tuple 中添加元素
+  ```python
+   a = (1,2,3,4)
+   a = (5,)+a
+   a = (5,1,2,3,4)
+  ```
