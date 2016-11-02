@@ -8,6 +8,7 @@
 ##读取txt 加载txt 读取docx 读取csv
 
 * numpy
+  * numpy.prob(a) a = [1,2,3] 元素的乘积
   * numpy.loadtxt(filename,delimiter)
   * numpy.save(file,arr)--> numpy.save(outfile,arr), numpy.load(outfile)
   * numpy.savez(file,*args,**kwds) 保存文件.npz格式  --> numpy.savez(outfile,x,y)--> x = numpy.load(outfile)['arr_0']
