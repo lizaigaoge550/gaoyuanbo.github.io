@@ -17,3 +17,11 @@
   sudo cp cuda/include/cudnn.h /usr/local/cuda/include
   sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64  
   sudo chmod a+r /usr/local/cuda/include/cudnn.h /usr/local/cuda/lib64/libcudnn*
+
+##注意
+ 仅仅是把libcudnn的so, 拷贝过去会报 不能打开libsudnn.so这个文件的错误. 原因是libcudnn.so 其实是个软连接
+ 做法把/usr/local/cuda/lib64/libcudnn.so 以及 libcudnn.so.5都删掉(因为他们都是软连接)
+ 然后建立软连接
+ ln -s libcudnn.so.5.1.0 libcudnn.so.5
+ ln -s libcudnn.so.5 libcudnn.so
+ 
