@@ -116,6 +116,13 @@ os.system(cmd) 例如: cmd命令(重命名命令)一般是 ren "fff" "dfdf" 文�
 * compress('ABCDEF',[1,0,1,0,1,1]) ------> A C E F
 * cycle('ABCD') -----> A B C D A B C D ......
 
+## dict
+* 字典排序 （sorted(wordlist.items(), key=lambda x:x[1],reverse=True)
+  排序后每个元素是tuple类型
+* collections 的 OrderedDict() 这个添加元素是按照元素的先后顺序添加的, 方法 popitem()弹出最后一个元素
+  popitem(last=False)弹出第一个元素
+
+
 ##pandas Tuple
 * 向tuple 中添加元素
   ```python
@@ -123,8 +130,4 @@ os.system(cmd) 例如: cmd命令(重命名命令)一般是 ren "fff" "dfdf" 文�
    a = (5,)+a
    a = (5,1,2,3,4)
   ```
-##dict
-* 字典排序 （sorted(wordlist.items(), key=lambda x:x[1],reverse=True)
-  排序后每个元素是tuple类型
-* collections 的 OrderedDict() 这个添加元素是按照元素的先后顺序添加的, 方法 popitem()弹出最后一个元素
-  popitem(last=False)弹出第一个元素
+
