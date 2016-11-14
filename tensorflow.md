@@ -12,6 +12,15 @@
  
  但是tensorflow 的 bidirectional_dynamic_rnn(cell_fw,cell_bw,inputs,sequence_length,dytype)要求的输入不是上面的list, 而是一个三位数组          [batch,n_step,n_input], sequence_length 是实际的每个序列(每个样本有多少时序)的长度 np.ones(batch)*n_step, 还有一个重要的参数 time_major
 如果是true, input是[n_step,batch,n_input]
+
+lstm不可重复使用, 比如有n个hidden，每个hidden后，经过一个lstm 
+```python
+for h in hidden:
+ ....
+ ....
+ lstm
+```
+这时会报 ./lstm/cell/W_0 distableed错误
  
  
  
