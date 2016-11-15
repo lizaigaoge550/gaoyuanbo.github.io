@@ -21,6 +21,13 @@ for h in hidden:
  lstm
 ```
 这时会报 ./lstm/cell/W_0 distableed错误
+
+##获取维度
+  * variant.get_shape().as_list()
+  * variant.get_shape().with_rank_at_least(3) 维度至少为3
+  * tf.while_loop(cond,body,loop_vars.....) cond 条件 ，body 函数， loop_vars 存储每步的变量以便下次迭代使用 
+    在dynamic_rnn函数中看到。
+  
  
  
  
