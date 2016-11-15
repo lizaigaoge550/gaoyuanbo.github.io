@@ -131,3 +131,6 @@ os.system(cmd) 例如: cmd命令(重命名命令)一般是 ren "fff" "dfdf" 文�
    a = (5,1,2,3,4)
   ```
 
+## string
+* string.strip, lstrip, rstrip 
+  S = '001100' , S.strip('0')--->'11', S.lstrip('0')---> '1100', S.rstrip('0')--->'0011'
