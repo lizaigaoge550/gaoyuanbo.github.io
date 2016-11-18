@@ -26,3 +26,10 @@
   
 ## 关于neutrons, 也可以用pruning方法，看每步的权重，减去权重很小的节点 
      
+## 初始化权重
+ * sigmoid units 
+   
+   ![](http://latex.codecogs.com/gif.latex?U(-r,r), r= \\sqrt{\\frac{6}{N_i+N_o}})  
+ * hyperbolic tangent units 
+   
+   ![](http://latex.codecogs.com/gif.latex?U(-r,r), r= 4\\sqrt{\\frac{6}{N_i+N_o}})  
