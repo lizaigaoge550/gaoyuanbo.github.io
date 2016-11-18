@@ -11,6 +11,7 @@
   * ![](http://latex.codecogs.com/gif.latex?\\frac{2}{3}*N_i+N_o) 且小于 ![](http://latex.codecogs.com/gif.latex?2*N_i)
   * ![](http://latex.codecogs.com/gif.latex?\\sqrt{N_i*N_o})
   * 注意 data normalization
+
 ## 2 activation
   * 一般用relu
   * 但是数据不稀疏时考虑sigmoid
