@@ -15,4 +15,12 @@
 ## 2 activation
   * 一般用relu
   * 但是数据不稀疏时考虑sigmoid
+  
+## 3 batch size
+  * the lower it is, the training signal is , the higher it is, the longer it will take to compute the gradient for each step
+
+## 4 epoch
+  * 把数据分为train, valid, test
+  * 初始化 epoch 一个很大的值
+  * 当验证集效果最好时 ,break
      
