@@ -9,4 +9,5 @@
      * ![](http://latex.codecogs.com/gif.latex?N_i)是样本特征数(input)
      * ![](http://latex.codecogs.com/gif.latex?N_o)是输出层节点数
   * ![](http://latex.codecogs.com/gif.latex?\\frac{2}{3}*N_i+N_o) 且小于 ![](http://latex.codecogs.com/gif.latex?2*N_i)
+  * ![](http://latex.codecogs.com/gif.latex?\\sqrt{N_i*N_o})
      
