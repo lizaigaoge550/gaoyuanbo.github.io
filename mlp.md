@@ -23,4 +23,6 @@
   * 把数据分为train, valid, test
   * 初始化 epoch 一个很大的值
   * 当验证集效果最好时 ,break
+  
+## 关于neutrons, 也可以用pruning方法，看每步的权重，减去权重很小的节点 
      
