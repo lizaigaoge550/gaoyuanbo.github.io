@@ -33,3 +33,11 @@
  * hyperbolic tangent units 
    
    ![](http://latex.codecogs.com/gif.latex?U(-r,r), r= 4\\sqrt{\\frac{6}{N_i+N_o}})  
+
+## 判断结果是否过拟合
+  * 看test set的accuracy and cross-entropy, 特点 accuracy 在经过一个高点后下降, cross-entropy 先下降, 然后上升.
+    当accuracy and cross-entropy 在过拟合时, 而epoch不同以accuracy的为准.
+  * 对比 train set 和 test set 的accuracy, 可以看到 train set的accuracy很高, test set的accuracy很低
+  
+    
+    
