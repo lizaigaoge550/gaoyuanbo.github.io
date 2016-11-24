@@ -15,6 +15,7 @@
   * numpy.genfromtxt 可以执行 列的分隔符(delimter) delimter=3是代表每个元素长度为3 delimter=[4,3,2]代表第一行的每个元素长度4 ...
 跳过行和选择的列 skip_header=3 跳过前3列 skip_footer=5 跳过后5列
 usecols 来选择列 dtype选择数据类型
+  * numpy.savetxt()报错 foramt "%.18...." 这是因为不能保存3维数组, 要先转换成2维, 再保存.
 * pandas
   * pandas.readcsv(filename)
     * 参数 header=None 不把第一行当作索引
