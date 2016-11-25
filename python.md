@@ -57,8 +57,9 @@ name = x1.sheet_names
 
 ##os 执行 cmd命令
 
-os.system(cmd) 例如: cmd命令(重命名命令)一般是 ren "fff" "dfdf" 文件名是有引号的 所以在python中这条命令应该是
-''' ren "fff" "dfdf" '''
+* os.system(cmd) 例如: cmd命令(重命名命令)一般是 ren "fff" "dfdf" 文件名是有引号的 所以在python中这条命令应该是
+  ''' ren "fff" "dfdf" '''
+* os rmdir 和 remove不一样, 前者用于删除文件夹, 后者用于删除文件, 无用汇报Window Error
 
 ##移动dir to dir
 
