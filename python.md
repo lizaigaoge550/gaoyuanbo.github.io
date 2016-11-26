@@ -108,7 +108,7 @@ name = x1.sheet_names
 * savetxt 注意要把数组先整成int or float 否则可能汇报格式化的错误
 * 随机数 random.choice
 * 比较两个array是否相等(元素相同，类型相同) np.array_equal
-
+* 去除nan值 matrix[~np.isnan(matrix)] 执行完后，matrix退化成1D
 
 ##itertool
 * chain('ABC','DEF') ---> A B C D E F
