@@ -32,6 +32,7 @@ for h in hidden:
 ## CustomMultiLstmCell
 ![iamge](customMultiLstmCell.png)
 ```python
+import tensorflow as tf
 class CustomMultiRNNCell(RNNCell):
   """RNN cell composed sequentially of multiple simple cells."""
 
@@ -54,7 +55,7 @@ class CustomMultiRNNCell(RNNCell):
     self._cells = cells
     self._state_is_tuple = state_is_tuple
     self.hs = []
-    self.u = tf.Variable(tf.truncated_normal([len(cells)-1,cells[0]._num_units, cells[0]._num_units]),name='u_v')
+    #self.u = tf.Variable(tf.truncated_normal([len(cells)-1,cells[0]._num_units, cells[0]._num_units]),name='u_v')
     if not state_is_tuple:
       if any(nest.is_sequence(c.state_size) for c in self._cells):
         raise ValueError("Some cells return tuples of states, but the flag "
@@ -99,7 +100,7 @@ class CustomMultiRNNCell(RNNCell):
                         #这里的sigmoid主要是记录要忘掉过去多少
                         cur_inp += tf.nn.sigmoid(tf.matmul(us[i-1],U))
                     #cur_inp = tf.nn.relu(cur_inp)
-                cur_inp,new_state = cell(cur_inp,cur_state)
+                    cur_inp,new_state = cell(cur_inp,cur_state)
                 new_states.append(new_state)
                 h.append(cur_inp)
       else:
