@@ -25,4 +25,16 @@
   data = urllib2.urlopen(req)
   print data.read()
   ```
+## XX_Net不能bibtext的问题解决
+  编辑 F:\XX-Net-3.1.19\data\gae_proxy\config.ini配置文件
+  加入
   
+    [hosts]
+    
+    google.com = direct
+    
+    .google.com = direct
+    
+    scholar.googleusercontent.com = direct
+    
+    .scholar.googleusercontent.com = direct
