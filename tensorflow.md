@@ -128,7 +128,16 @@ class CustomMultiRNNCell(RNNCell):
 
 ```
 
+## 计算均值，方差
+  * tf.nn.moments(data,axis)
 
+## 压缩数据
+  * tf.squeeze(data) 注意这里的data不能带有未确定的值 ， 即? 
+  
+## 判断条件语句
+  * tf.cond(cond,fn1,fn2) 条件为真，执行fn1,否则fn2
+  
+ 
  
  
  
