@@ -141,7 +141,7 @@ class CustomMultiRNNCell(RNNCell):
  * tf.batch_mul(a,b) 例如 a-->128*50*1, b-->128*1*50, 结果是128*50*50
 
 ## layer normalization
- 
+ ![](http://latex.codecogs.com/gif.latex?W*\\frac{A-\\mu}{\\sigma}+b)
   
  
  
