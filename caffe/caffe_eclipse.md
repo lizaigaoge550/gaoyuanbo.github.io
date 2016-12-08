@@ -11,7 +11,7 @@
  * ![iamge](4_step.png)
  
 ## Step_5
- ### 一定要注意的是这里填写的是debug后的编译的caffe, 编译debug的caffe要把Makefile中的debug改为1,然后再重新编译。###
+ *一定要注意的是这里填写的是debug后的编译的caffe, 编译debug的caffe要把Makefile中的debug改为1,然后再重新编译。否则会debug出错，一定要注意!!!!
  * ![iamge](5_step.png)
 
 ## Step_6
@@ -20,3 +20,5 @@
 
 ## Step_7
  * Debug 
+ 
+ 
