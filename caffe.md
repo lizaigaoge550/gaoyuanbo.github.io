@@ -32,6 +32,6 @@
   * sudo cp Makefile.config.example Makefile.config
   * 修改Makefile.config 将USE_CUDNN注释号去除 :=1
   * make all 
-  
-
-![iamge](latex.jpg)
+  
+## 利用eclipse c++ 来导入caffe 并调试
+  * ![iamge](step_1.jpg)
