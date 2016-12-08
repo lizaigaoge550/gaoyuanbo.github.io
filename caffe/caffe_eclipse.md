@@ -11,8 +11,14 @@
  * ![iamge](4_step.png)
  
 ## Step_5
+ * <font color=read>
+     一定要注意的是这里填写的是debug后的编译的caffe
+   </font>
  * ![iamge](5_step.png)
 
 ## Step_6
  * 在红框内填入编译的caffe的路径
  * ![iamge](6step.png)
+
+## Step_7
+ * Debug 
