@@ -33,5 +33,6 @@
   * 修改Makefile.config 将USE_CUDNN注释号去除 :=1
   * make all 
   
+
 ## 利用eclipse c++ 来导入caffe 并调试
   * ![iamge](1_step.jpg)
