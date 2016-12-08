@@ -34,4 +34,4 @@
   * make all 
   
 ## 利用eclipse c++ 来导入caffe 并调试
-  * ![iamge](step_1.jpg)
+  * ![iamge](1_step.jpg)
