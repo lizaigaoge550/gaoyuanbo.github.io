@@ -1,6 +1,18 @@
+## Step_1
  * ![iamge](1_step.jpg)
+
+## Step_2 
  * ![iamge](2_step.jpg)
+
+## Step_3
  * ![iamge](3_step.png)
+
+## Step_4 
  * ![iamge](4_step.png)
+ 
+## Step_5
  * ![iamge](5_step.png)
+
+## Step_6
+ * 在红框内填入编译的caffe的路径
  * ![iamge](6step.png)
