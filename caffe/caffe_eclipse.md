@@ -1,0 +1,6 @@
+ * ![iamge](1_step.jpg)
+ * ![iamge](2_step.jpg)
+ * ![iamge](3_step.png)
+ * ![iamge](4_step.png)
+ * ![iamge](5_step.png)
+ * ![iamge](6step.png)
