@@ -32,3 +32,6 @@
   * sudo cp Makefile.config.example Makefile.config
   * 修改Makefile.config 将USE_CUDNN注释号去除 :=1
   * make all 
+  
+
+![iamge](latex.jpg)
