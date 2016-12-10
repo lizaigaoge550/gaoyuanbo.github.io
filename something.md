@@ -38,3 +38,7 @@
     scholar.googleusercontent.com = direct
     
     .scholar.googleusercontent.com = direct
+
+## win10系统明明内存很多，却报内存不足
+  * 以管理员身份运行cmd
+  * 命令bcdedit /set increaseuserva 2048 设置应用程序的内存为2G
