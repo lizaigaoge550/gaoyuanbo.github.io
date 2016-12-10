@@ -146,11 +146,11 @@ class CustomMultiRNNCell(RNNCell):
 ## 修剪梯度避免梯度消失和暴增
  * grads, norm = tf.clip_by_global_norm(tf.gradients(self.loss, self.trainable_vars), 5.0)
  * tf.gradients(ys,xs) 返回ys对xs的导数值
- * tf.clip_by_global_norm(tlist,norm) tlist就是要normlazation的数的集合
+ * tf.clip_by_global_norm(tlist,clipnorm) tlist就是要normlazation的数的集合
  
- ![](http://latex.codecogs.com/gif.latex?\\frac{tlist[i]*clip_norm }{max(global_norm,clip_norm)})
+ ![](http://latex.codecogs.com/gif.latex?\\frac{tlist[i]*clipnorm }{max(globalnorm,clipnorm)})
  
-  ![](http://latex.codecogs.com/gif.latex?global_norm = \\sqrt{\\sum_{i}tlist[i]^2})  
+  ![](http://latex.codecogs.com/gif.latex?globalnorm = \\sqrt{\\sum_{i}tlist[i]^2})  
  
  
  
