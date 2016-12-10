@@ -153,6 +153,9 @@ class CustomMultiRNNCell(RNNCell):
   ![](http://latex.codecogs.com/gif.latex?globalnorm = \\sqrt{\\sum_{i}tlist[i]^2})  
  
  
+## 更新参数值
+ optimizer = tf.train.AdamOptimizer(lr)
  
+update = optimizer.apply_grandient(zip(grads,train_vars))
  
  
