@@ -157,5 +157,10 @@ class CustomMultiRNNCell(RNNCell):
  optimizer = tf.train.AdamOptimizer(lr)
  
 update = optimizer.apply_grandient(zip(grads,train_vars))
+
+## 保存模型
+ * save = tf.train.Saver()
+ * save.Saver(sess = sess, save_path="...", global_step = '...',lastfile_name="....")
+   * save_path是checkpoint file的名字注意这里是file而不是dir, 如果设置了global_step就是保存每次的结果，如果迭代100次，每次的结果就是model.ckpt-      global_step, 如果不设置这个则每次的结果多
  
  
