@@ -163,11 +163,11 @@ update = optimizer.apply_grandient(zip(grads,train_vars))
  * save.Saver(sess = sess, save_path="...", global_step = '...',lastfile_name="....")
    * save_path是checkpoint file的名字注意这里是file而不是dir, 如果设置了global_step就是保存每次的结果，如果迭代100次，每次的结果就是model.ckpt-      global_step, 如果不设置这个则每次的结果都会覆盖之前的结果，保存在model.ckpt中.lastfile_name是保存最新的模型, 如果在初始化Saver时设置了            max_to_keep参数最大保留checkpoint数默认是5，lastfile_name 默认是checkpoint文件和save_path在一个文件中, 则checkpoint中
      是
-     
-     ```python
+     ```
      model_checkpoint_path: "model0.ckpt-1"
      all_model_checkpoint_paths: "model0.ckpt-0"
      all_model_checkpoint_paths: "model0.ckpt-1"
+     
      ```
     
    *  all_model会最多有5个最新的, model_checkpoint_path是每次最新的
