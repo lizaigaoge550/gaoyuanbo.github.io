@@ -171,5 +171,14 @@ update = optimizer.apply_grandient(zip(grads,train_vars))
      ```
     
    *  all_model会最多有5个最新的, model_checkpoint_path是每次最新的
+   
+ ## 应用模型
+ 
+  * save.restore(sess=sess, save_path ='...'(和saver中save_path一样)) 或者 这个参数也可以是
+    tf.train.last_checkpoint(checkpoint_paths)'checkpoint/checkpoint'
 
+## save中其他函数
+ * new_saver = tf.train.import_meta_graph(filename='/tmp/my-model.meta') 导入graph
+ * new_saver.restore(sess, tf.train.latest_checkpoint('./')) 
+ * 特别注意要这样做, 首先要在初始化saver时设置write_meta参数为True, 这里的sess = tf.Session()
  
