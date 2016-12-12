@@ -169,7 +169,10 @@ update = optimizer.apply_grandient(zip(grads,train_vars))
      all_model_checkpoint_paths: "model0.ckpt-0"
      all_model_checkpoint_paths: "model0.ckpt-1"
      ```
-    all_model会最多有5个最新的, model_checkpoint_path是每次最新的
+    
+    all_model会最多有5个最新的, model_checkpoint_path是每次最新的
 
-* save.restore(sess=sess, save_path ='...'(和saver中save_path一样)) 或者 这个参数也可以是                tf.train.last_checkpoint(checkpoint_paths)'checkpoint/checkpoint'
+* save.restore(sess=sess, save_path ='...'(和saver中save_path一样)) 或者 这个参数也可以是
+
+  tf.train.last_checkpoint(checkpoint_paths)'checkpoint/checkpoint'
  
