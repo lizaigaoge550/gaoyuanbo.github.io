@@ -24,3 +24,10 @@ ssh $user@$ip $cmd
 done
 
 ```
+## 循环遍历一个文件夹下所有文件
+```python
+  for f in `ls $dir`
+  do
+  ....note: 文件路径为$dir'/'$f
+  done
+```
