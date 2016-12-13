@@ -50,6 +50,7 @@
 ## Longest Subtring without Repeating Charaters
  * 思路: 保留一个left值，这个值记录没有重复字符串的起点，i往前循坏，一个数组记录字符是否重复，如果重复更改left的值
  * 代码:
+ 
  ```c++
   int lengthOfLongestSubstring(string s) {
         int ans = 0, left = 0, len = s.length();
