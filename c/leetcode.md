@@ -23,7 +23,8 @@
  
  ## Add Two Numbers
   * 思路：对应位置加后，新的节点的值是相加后的值%10, 并且保留相加后的值/10, 往后传递
-  * 代码:
+  
+  * 代码:
   ```c++
   ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
         ListNode *dummy = new ListNode(0), *p = dummy;
