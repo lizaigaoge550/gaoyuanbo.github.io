@@ -4,3 +4,4 @@
 
 ## vim退出不保存
  * :q!
+* ssh -p 20037 wang@ccpl.psych.ac.cn
