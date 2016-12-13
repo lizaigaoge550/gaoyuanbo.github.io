@@ -66,8 +66,10 @@
  ```
  
  ## Median of Two Sorted Arrays
-  * 思路：每次剔除前k/2的元素，如果k=1, 则返回较小的数min(A[A_start],B[B_start]), 若某个数组搜索完，则返回另一个数组的start元素+k-1
-  * 代码:
+  
+  * 思路：每次剔除前k/2的元素，如果k=1, 则返回较小的数min(A[A_start],B[B_start]), 若某个数组搜索完，则返回另一个数组的start元素+k-1
+  
+  * 代码:
   ```c++
       double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
         int len = nums1.size() + nums2.size();
