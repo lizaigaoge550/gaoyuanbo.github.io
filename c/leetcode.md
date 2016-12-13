@@ -64,3 +64,35 @@
         return ans;
     }
  ```
+ 
+ ## Median of Two Sorted Arrays
+  * 思路：每次剔除前k/2的元素，如果k=1, 则返回较小的数min(A[A_start],B[B_start]), 若某个数组搜索完，则返回另一个数组的start元素+k-1
+  * 代码:
+  ```c++
+      double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
+        int len = nums1.size() + nums2.size();
+        if (len % 2 == 1){
+            return findK(nums1, 0, nums2, 0, len/2+1);
+        } else{
+            return (findK(nums1,0, nums2, 0, len/2) + findK(nums1,0, nums2, 0, len/2+1))/2.0;
+        }
+    }
+    
+    double findK(vector<int>& A, int A_start, vector<int>& B, int B_start, int k){
+        if (A_start >= A.size()){
+            return B[B_start+k-1]; //找到超过A长度的元素，返回}
+        if (B_start >= B.size()){
+            return A[A_start+k-1];
+        }
+        if (k == 1){
+            return min(A[A_start],B[B_start]);
+        }
+        int A_key = (A_start + k/2-1) < A.size()?A[A_start + k/2-1]:INT_MAX;
+        int B_key = (B_start + k/2-1) < B.size()?B[B_start + k/2-1]:INT_MAX;
+        if(A_key > B_key){
+            return findK(A,A_start,B,B_start+k/2,k-k/2);
+        }else{
+            return findK(A,A_start+k/2,B,B_start,k-k/2);
+        }
+    }
+  ```
