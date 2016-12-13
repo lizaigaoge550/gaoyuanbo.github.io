@@ -20,7 +20,16 @@ for h in hidden:
  ....
  lstm
 ```
-这时会报 ./lstm/cell/W_0 distableed错误
+这时会报 ./lstm/cell/W_0 distableed错误, 这是因为参数没有设置重用，即每个lstm层的参数应该重用
+```python
+for i in range(len(hidden)):
+ if i > 0:
+   tf.get_variable_scope().reuse_variables()
+ ....
+ lstm
+ ....
+ 
+```
 
 ##获取维度
   * variant.get_shape().as_list()
