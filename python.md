@@ -110,6 +110,7 @@ name = x1.sheet_names
 * 比较两个array是否相等(元素相同，类型相同) np.array_equal
 * 去除nan值 matrix[~np.isnan(matrix)] 执行完后，matrix退化成1D
 * 将nan转化为0 np.nan_to_num(matrix)
+
 ##itertool
 * chain('ABC','DEF') ---> A B C D E F
 * from_iterable(['ABC','DEF']) ----> A B C D E F
