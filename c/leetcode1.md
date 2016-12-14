@@ -1,6 +1,7 @@
 ## ZigZag Conversion
  * 思路：最后一行和第一行的间隔是2*n-2, 中间的是每两个数间隔加起来是2*n-2
  * 代码:
+   
    ```c++
     string convert(string s, int numRows) {
         if(numRows == 1) return s;
