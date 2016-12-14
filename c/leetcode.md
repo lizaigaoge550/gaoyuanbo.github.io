@@ -98,3 +98,27 @@
         }
     }
   ```
+
+## Longest Palindromic Substring
+ * 思路: 采用动归思想，p[i][j] = (s[i] == s[j]) && (i-j<2 || p[j+1][i-1])
+ * 代码:
+  ```c++
+   string longestPalindrome(string s) {
+        int len = s.size();
+        int p[len][len]; //声明数组存放每次的比较结果
+       memset(p,0,len*len*sizeof(int));
+        int maxL = 0, start=0, end=0;
+        for(int i=0;i < s.size();i++){
+            for(int j = 0;j<i;j++){
+                p[j][i] = (s[j] == s[i]) && (i-j<2 || p[j+1][i-1]); //关键
+                if(p[j][i] && maxL < (i-j+1)){
+                    maxL = i-j+1;
+                    start = j;
+                    end = i;
+                }
+            }
+            p[i][i] = 1;
+        }
+        return s.substr(start,end-start+1);
+    }
+  ```
