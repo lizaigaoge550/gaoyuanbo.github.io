@@ -43,6 +43,29 @@
     }
    ```
    
+## Palindrome Number
+      * 思路：前后指针，不相等返回false
+      * 代码
+      
+      ```c++
+      bool isPalindrome(int x) {
+        if(x == 0) return true;
+        if(x < 0) return false;
+        string s = to_string(x);
+        int left = 0, right = s.size()-1;
+        while(left < right){
+            if(s[left++] != s[right--]) return false;
+        }
+        return true;
+    }
+      ```   
+   
+   
+   
+   
+   
+   
+   
  ## String to Integer
  
    * 思路: 先去掉前后的空格，遍历遇到为空的跳过，遇到不是数字的，就结束循环
@@ -87,19 +110,4 @@
 
 
 
-## Palindrome Number
-      * 思路：前后指针，不相等返回false
-      * 代码
-      
-      ```c++
-      bool isPalindrome(int x) {
-        if(x == 0) return true;
-        if(x < 0) return false;
-        string s = to_string(x);
-        int left = 0, right = s.size()-1;
-        while(left < right){
-            if(s[left++] != s[right--]) return false;
-        }
-        return true;
-    }
-      ```
+
