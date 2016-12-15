@@ -48,6 +48,7 @@
    * 代码：
    * c++ string.erase(位置,长度，要擦除的字符) 不指定长度, 擦除当前位置元素, 不指定要擦除的元素，都擦除.
    * string.find_first_not_of(ss) 返回第一个string中不在ss中字符的索引
+   
    ```c++
    int myAtoi(string str) {
         if (str == "") return 0;
