@@ -19,3 +19,62 @@
         return res;
       }
    ```
+   
+ ## Reverse Integer
+   * 思路:
+   * 代码:
+      
+   ```c++
+   int reverse(int x) {
+        if(x == 0) return x;
+        if(x == INT_MIN) return 0;
+        bool neg = (x < 0);
+        long rtn = 0, prev = 0;
+        x = neg ? -1 * x : x;
+        while(x != 0){
+            rtn = rtn * 10 + x % 10; //结果每次乘以10
+            x = x / 10;
+            if(prev > rtn) return 0;
+        }
+
+        if(neg) rtn = rtn * -1;
+        if(rtn < INT_MIN || rtn > INT_MAX) return 0;
+        return rtn;
+    }
+   ```
+   
+ ## String to Integer
+   * 思路: 先去掉前后的空格，遍历遇到为空的跳过，遇到不是数字的，就结束循环
+   * 代码：
+   * c++ string.erase(位置,长度，要擦除的字符) 不指定长度, 擦除当前位置元素, 不指定要擦除的元素，都擦除.
+   * string.find_first_not_of(ss) 返回第一个string中不在ss中字符的索引
+   ```c++
+   int myAtoi(string str) {
+        if (str == "") return 0;
+        str.erase(0,str.find_first_not_of(' ')); //去掉前面的空格
+        str.erase(str.find_last_not_of(' ')+1); //去掉最后的空格
+        int i = 0, len = str.length(),sign = 1;
+        while(i < len && str[i] == ' ') i++; //若是空格，跳过
+        if(i == len) return 0;
+        if(str[i] == '+'){
+            sign = 1;
+            i++;
+        }else{
+            if(str[i] == '-'){
+                sign = -1;
+                i++;
+            }
+        }
+        long long ret = 0;
+        for(;i < len;i++){
+            if(str[i] < '0' || str[i] > '9') break; //若不是数字，break
+            ret = ret*10 + (str[i]-'0');
+            if(ret > INT_MAX) break;
+        }
+        ret *= sign;
+        if(ret > INT_MAX) return INT_MAX;
+        if(ret < INT_MIN) return INT_MIN;
+        return ret;
+        
+    }
+   ```
