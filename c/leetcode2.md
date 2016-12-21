@@ -45,3 +45,26 @@
         return maxarea;
     }
 ```
+
+## Longest Common Prefix  
+* 题意：发现最长前缀在string的list中
+* 思路：就是一个一个string比较，每次去小的orefix
+* 代码
+```python
+  int helper(string olds, string news){
+        for(int i =0;i<min(olds.size(),news.size());i++){
+            if (olds[i] != news[i]) return i;
+        }
+        return min(olds.size(),news.size());
+    }
+
+    string longestCommonPrefix(vector<string>& strs) {
+        if(strs.size() == 0) return "";
+        string rtn = strs[0];
+        for(int i = 1;i <strs.size()&&rtn != "";i++){
+            rtn = rtn.substr(0,helper(rtn,strs[i])); //c++中截取字符串 substr(start,end)
+            }
+    return rtn;
+        
+    }
+```
