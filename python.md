@@ -29,7 +29,9 @@ name = x1.sheet_names
   * pandas.DataFrame.to_csv(dataframe,outputfile) note:要想把一个数组保存到csv 这个数组得先转化成DataFrame 用 pd.DataFrame(arr)
     * index = False 不要行名
     * header=False 不要列名
-  * pandas.from_dict(dict,orient = "columns") orient = 'columns'是key作为列 'rows'key作为行
+    * 给列指定名字 header=["",""]
+    * 给index指定名字 index_label=""
+  * pandas.from_dict(dict,orient = "columns") orient = 'columns'是key作为列 'rows'key作为行
 修改列名 DataFrame.columns = ['','']必须是list
   * pd.cut() 切分数据 pd.qcut() 也是切分数据 不同的是qcut(data,4)是按样本的4分位数进行切分得到大小基本相等的面元
 
