@@ -29,7 +29,9 @@ name = x1.sheet_names
   * pandas.DataFrame.to_csv(dataframe,outputfile) note:要想把一个数组保存到csv 这个数组得先转化成DataFrame 用 pd.DataFrame(arr)
     * index = False 不要行名
     * header=False 不要列名
+    
     * 给列指定名字 header=["",""]
+    
     * 给index指定名字 index_label=""
   * pandas.from_dict(dict,orient = "columns") orient = 'columns'是key作为列 'rows'key作为行
 修改列名 DataFrame.columns = ['','']必须是list
@@ -96,7 +98,7 @@ name = x1.sheet_names
 * pd.concat([df1,df2],axis=1) 可以选择方向合并
 
 ##numpy
-* bincount来记录元素的个数. 例如bincount([0,0,1,1,2,3,4]) 结果[2,2,1,1,1]
+* bincount来记录元素的个数. 例如bincount([0,0,1,1,2,3,4]) 结果[2,2,1,1,1], 报错'float64'重新 指定类型 astype(np.int)
 * ravel把元素归成1行 例如s = [[2,3,4],[1,2,3]] np.ravel(s) [2,3,4,1,2,3]
 * atleast_2d 把一个数组整成至少2维
 * 合并数组 concatenate((a,b),axis=0) 0 相当于maltlab中的; 行合并 
@@ -112,7 +114,7 @@ name = x1.sheet_names
 * 比较两个array是否相等(元素相同，类型相同) np.array_equal
 * 去除nan值 matrix[~np.isnan(matrix)] 执行完后，matrix退化成1D
 * 将nan转化为0 np.nan_to_num(matrix)
-
+* argwhere() 找到指定值的索引
 ##itertool
 * chain('ABC','DEF') ---> A B C D E F
 * from_iterable(['ABC','DEF']) ----> A B C D E F
