@@ -4,7 +4,7 @@ plt.savefig(name,dpi=fig.dpi)
 
 #转化图片格式 --> bmp 256色
 ```python
-  import os
+import os
 from PIL import Image
 import glob
 for dir in os.listdir(os.getcwd()):
@@ -36,4 +36,5 @@ for dir in os.listdir(os.getcwd()):
             # Print Shop Deluxe
             im.save('..\\bmp256\\'+filename.split('\\')[-1].replace('.jpg', '.bmp'))
 ```
-
+#画等高线
+  plt.contour(x,y,z) z是2维, x,y可以是1维可以是2维 , 具体使用见sklearn包函数 svm.py
