@@ -113,7 +113,9 @@ name = x1.sheet_names
 * 去除nan值 matrix[~np.isnan(matrix)] 执行完后，matrix退化成1D
 * 将nan转化为0 np.nan_to_num(matrix)
 * argwhere() 找到指定值的索引
-
+* meshgrid(x,y) 返回 一个x 为行, y为列的xx, yy, 例如 x = [0,0.5,1] y = [0,1] 结果就是 xx=[[0,0.5,1],[0,0.5,1]], 因为y size是2 
+  yy = [[0,0,0],[1,1,1]] 因为x 的size是3
+  
 ##itertool
 * chain('ABC','DEF') ---> A B C D E F
 * from_iterable(['ABC','DEF']) ----> A B C D E F
