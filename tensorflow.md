@@ -191,5 +191,14 @@ update = optimizer.apply_grandient(zip(grads,train_vars))
  * new_saver.restore(sess, tf.train.latest_checkpoint('./')) 
  * 特别注意要这样做, 首先要在初始化saver时设置write_meta参数为True, 这里的sess = tf.Session()
  
-
+## 几个常用的函数
+ * tf.reciprocal(x) ==> 1/x
+ * tf.nn.moments(x,axis=[]) 计算指定corridate的x的均值和方差
+ * 例如 x = [[1.,3.],[2.,3.]] 若axis = [0] 返回[1.5,3],[方差], 若axis = [0,1] 返回 [2.25] [方差]
+## cnn 中 conv2d strides pool strides ksize的含义
+ * 计算最后维度公式
+ ![](http://latex.codecogs.com/gif.latex?filter_width = \frac{width-width_w}{w_{overlap}})
+ ![](http://latex.codecogs.com/gif.latex?filter_height = \frac{height-height_w}{h_{overlap}})
+ * conv2d stride = [batch,overlapheight,overlapwidth,depth] batch 和 depth 为1， 
+ 
  
