@@ -191,3 +191,5 @@ update = optimizer.apply_grandient(zip(grads,train_vars))
  * new_saver.restore(sess, tf.train.latest_checkpoint('./')) 
  * 特别注意要这样做, 首先要在初始化saver时设置write_meta参数为True, 这里的sess = tf.Session()
  
+
+ 
