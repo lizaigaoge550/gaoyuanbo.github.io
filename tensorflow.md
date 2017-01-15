@@ -198,8 +198,10 @@ update = optimizer.apply_grandient(zip(grads,train_vars))
 ## cnn 中 conv2d strides pool strides ksize的含义
  * 计算最后维度公式
  
- ![](http://latex.codecogs.com/gif.latex?filter_width =\\frac{width-width_w}{w_{overlap}})
- ![](http://latex.codecogs.com/gif.latex?filter_height=\\frac{height-height_w}{h_{overlap}})
+ ![](http://latex.codecogs.com/gif.latex?filter_width =\\frac{width-width_w}{w_{overlap}}+1)
+ 
+ ![](http://latex.codecogs.com/gif.latex?filter_height=\\frac{height-height_w}{h_{overlap}}+1)
  * conv2d stride = [batch,overlapheight,overlapwidth,depth] batch 和 depth 为1， 
+ * max_pool ksize=[batch,height,width,depth] batch depth=1 相当于 conv2d中的w
  
  
