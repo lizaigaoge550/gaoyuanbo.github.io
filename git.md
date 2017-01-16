@@ -21,6 +21,7 @@
   * git init
   * git config user.name "lizaigaoge550"
   * git config user.email "lizaigaoge550@gmail.com"
+  * git add *
   * git commit -m 'initial commit'
   * git remote set-url origin https://github.com/lizaigaoge550/reduct_Dimension.git
   * git push -u origin master
