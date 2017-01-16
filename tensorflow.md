@@ -195,6 +195,8 @@ update = optimizer.apply_grandient(zip(grads,train_vars))
  * tf.reciprocal(x) ==> 1/x
  * tf.nn.moments(x,axis=[]) 计算指定corridate的x的均值和方差
  * 例如 x = [[1.,3.],[2.,3.]] 若axis = [0] 返回[1.5,3],[方差], 若axis = [0,1] 返回 [2.25] [方差]
+ * tf.nn.softmax_cross_entropy_with_logits(预测值,真实值) 顺序不能颠倒, 否则会出错
+ 
 ## cnn 中 conv2d strides pool strides ksize的含义
  * 计算最后维度公式
  
