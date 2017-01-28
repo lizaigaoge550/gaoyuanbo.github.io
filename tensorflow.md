@@ -207,7 +207,7 @@ update = optimizer.apply_grandient(zip(grads,train_vars))
  * conv2d stride = [batch,overlapheight,overlapwidth,depth] batch 和 depth 为1， 
  * max_pool ksize=[batch,height,width,depth] batch depth=1 相当于 conv2d中的w
  
- ## 初始化相关函数
+## 初始化相关函数
  ```python
  def create_convolution_variable(name,shape):
     initializer = tf.contrib.layers.xavier_initializer_conv2d()
@@ -218,12 +218,12 @@ def create_bias_variable(name,shape):
     return tf.Variable(initializer(shape=shape),name)
 
  ```
- ##保存和复原指定变量
+## 保存和复原指定变量
  * 例如有两个变量 w,b , 先收集这两个变量 tf.add_to_collection('vars',w), tf.add_to_collection('vars',b)
  * 然后再restore时, saver.restore(sess, save_path='...'), all_vars = tf.get_collection('vars')
  * for v in vars: sess.run(v) 或者 也可以打印名字 v.name 注意这里的w的名字是 w:0 b:0
  
- ## 填充
+## 填充
  * tf.pad(t, padding, 'constant')
  
  ```python
@@ -239,3 +239,5 @@ def create_bias_variable(name,shape):
  t的前一列和后一列各加两列
  
  ```
+ ## 导数
+ tf.rsqrt(x) ==> 1/sqrt(x)
