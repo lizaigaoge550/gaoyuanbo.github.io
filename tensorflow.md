@@ -217,4 +217,8 @@ def create_bias_variable(name,shape):
     return tf.Variable(initializer(shape=shape),name)
 
  ```
+ ##保存和复原指定变量
+ * 例如有两个变量 w,b , 先收集这两个变量 tf.add_to_collection('vars',w), tf.add_to_collection('vars',b)
+ * 然后再restore时, saver.restore(sess, save_path='...'), all_vars = tf.get_collection('vars')
+ * for v in vars: sess.run(v) 或者 也可以打印名字 v.name 注意这里的w的名字是 w:0 b:0
  
