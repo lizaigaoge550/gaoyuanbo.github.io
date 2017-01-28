@@ -241,3 +241,6 @@ def create_bias_variable(name,shape):
  ```
  ## 导数
  tf.rsqrt(x) ==> 1/sqrt(x)
+ 
+ ## TensorArray
+ * 在TensorArray write后必须转换成Tensor才能sess.run(), 转换的方法是TensorArray.pack()
