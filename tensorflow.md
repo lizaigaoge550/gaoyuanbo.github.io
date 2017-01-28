@@ -222,3 +222,16 @@ def create_bias_variable(name,shape):
  * 然后再restore时, saver.restore(sess, save_path='...'), all_vars = tf.get_collection('vars')
  * for v in vars: sess.run(v) 或者 也可以打印名字 v.name 注意这里的w的名字是 w:0 b:0
  
+ ## 填充
+ * tf.pad(t, padding, 'constant')
+ ```python
+ t = tf.Tensor([[1,2,3],[4,5,6]])
+ pad(t, paddings=[[1,1],[2,2]],'CONSTANT')
+ [[0,0,0,0,0,0,0]
+  [0,0,1,2,3,0,0]
+  [0,0,4,5,6,0,0]
+  [0,0,0,0,0,0,0]
+ ]
+ paddings以一个[n,2]的数组, n是t的秩, 这个例子中[1,1]代表第一个维度，即t的行，意思是在t的前一行和后一行各加一行, [2,2]代表列,意思是在
+ t的前一列和后一列各加两列
+ ```
