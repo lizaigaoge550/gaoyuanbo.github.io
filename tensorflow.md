@@ -147,7 +147,7 @@ class CustomMultiRNNCell(RNNCell):
   * tf.cond(cond,fn1,fn2) 条件为真，执行fn1,否则fn2
   
 ## 子维度相乘
- * tf.batch_mul(a,b) 例如 a-->128*50*1, b-->128*1*50, 结果是128*50*50
+ * tf.batch_mul(a,b) 例如 a-->128 * 50 * 1, b-->128 * 1 * 50, 结果是128*50*50
 
 ## layer normalization
  ![](http://latex.codecogs.com/gif.latex?W*\\frac{A-\\mu}{\\sigma}+b)
