@@ -17,3 +17,12 @@
 ##尊敬
 * respect
 * revere
+
+##散发
+* emanate
+* emit
+
+##驱使，引起
+* provoke
+* force
+* cause
