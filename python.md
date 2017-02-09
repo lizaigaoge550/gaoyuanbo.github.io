@@ -17,7 +17,7 @@
 usecols 来选择列 dtype选择数据类型
   * numpy.savetxt()报错 foramt "%.18...." 这是因为不能保存3维数组, 要先转换成2维, 再保存.
 * pandas
-  * pandas.readcsv(filename)
+  * pandas.read_csv(filename)
     * 参数 header=None 不把第一行当作索引
     * index_col=False 不要用第一列作为索引
     * skiprows list or integer
