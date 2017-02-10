@@ -26,3 +26,7 @@
 * provoke
 * force
 * cause
+
+##贪婪的
+* greedy
+* avid
