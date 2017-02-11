@@ -244,3 +244,12 @@ def create_bias_variable(name,shape):
  
  ## TensorArray
  * 在TensorArray write后必须转换成Tensor才能sess.run(), 转换的方法是TensorArray.pack()
+
+ ##用index提取数组某些列或行
+```python
+def columns(array,index):
+  return np.array(array)[:,index]
+ t = tf.constant([[1.,2.],[3.,4.],[5.,6.]], dtype=tf.float32)
+ index = tf.constant([0])
+ tf.py_func(columns,[t,index],tf.float32)
+``` 
