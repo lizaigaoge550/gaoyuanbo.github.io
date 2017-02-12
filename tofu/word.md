@@ -5,6 +5,7 @@
 ##礼节，礼仪
 * etiquette
 * ceremony
+* ritual
 
 ##刺激，激励
 * spur
