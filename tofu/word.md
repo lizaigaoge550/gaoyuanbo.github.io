@@ -40,3 +40,7 @@
 ##漫游，闲逛
  * wander
  * roam
+ 
+##陈词滥调
+ * chiche
+ * stereotype
