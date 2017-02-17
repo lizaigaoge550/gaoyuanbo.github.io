@@ -44,3 +44,7 @@
 ##陈词滥调
  * chiche
  * stereotype
+
+##描写
+ * portray
+ * descripe
