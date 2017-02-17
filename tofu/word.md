@@ -22,6 +22,7 @@
 ##散发
 * emanate
 * emit
+* disperse
 
 ##驱使，引起
 * provoke
@@ -31,3 +32,7 @@
 ##贪婪的
 * greedy
 * avid
+
+##渴望
+ * longing for
+ * desire
