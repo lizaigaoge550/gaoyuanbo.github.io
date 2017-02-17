@@ -36,3 +36,7 @@
 ##渴望
  * longing for
  * desire
+ 
+##漫游，闲逛
+ * wander
+ * roam
