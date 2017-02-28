@@ -27,8 +27,8 @@ name = x1.sheet_names
 在解析x1.parse(name[..])
 参数和csv类似
   * pandas.DataFrame.to_csv(dataframe,outputfile) note:要想把一个数组保存到csv 这个数组得先转化成DataFrame 用 pd.DataFrame(arr)
-    * index = False 不要行名
-    * header=False 不要列名
+    * index = False 不要行索引
+    * header=False 不要列名
     * 给列指定名字 header=["",""]
     * 给index指定名字 index_label=""
   * pandas.from_dict(dict,orient = "columns") orient = 'columns'是key作为列 'rows'key作为行
