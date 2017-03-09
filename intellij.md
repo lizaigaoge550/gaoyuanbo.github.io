@@ -1,6 +1,7 @@
 ##sbt spark 项目，写在build.sbt
 * ![iamge](build.sbt.png)
 * 注意spark 版本就选2.10.5或4，否则会出现问题
+
 ##spark 打包
  * File-->project struct-->Artifacts-->+-->jar--->from module with dependencies
  * Build-->Build Artifacts-->Build
