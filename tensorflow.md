@@ -253,3 +253,6 @@ def columns(array,index):
  index = tf.constant([0])
  tf.py_func(columns,[t,index],tf.float32)
 ``` 
+## 报错出现 GraphDef larger than 2GB
+ * 原因：每测试一次都会往图中加节点，所以测试多了就会溢出
+ * 解决方式: 在每次session 结束后调用 tf.reset_default_graph(),重置下图
