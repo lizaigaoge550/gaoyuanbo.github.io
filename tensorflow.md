@@ -256,3 +256,7 @@ def columns(array,index):
 ## 报错出现 GraphDef larger than 2GB
  * 原因：每测试一次都会往图中加节点，所以测试多了就会溢出
  * 解决方式: 在每次session 结束后调用 tf.reset_default_graph(),重置下图
+ 
+## embedding_lookup() 函数的陷阱
+ * 支持1维变长，不支持2维变长，  
+ * tf.nn.embedding_lookup(embedding,input) 当input是一个一维数组的时候可以是变长，二维数组每次必须是固定大小
