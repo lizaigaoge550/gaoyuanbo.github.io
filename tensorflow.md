@@ -207,6 +207,10 @@ update = optimizer.apply_grandient(zip(grads,train_vars))
  * conv2d stride = [batch,overlapheight,overlapwidth,depth] batch 和 depth 为1， 
  * max_pool ksize=[batch,height,width,depth] batch depth=1 相当于 conv2d中的w
  
+## tf.assign
+ * 第一个参数是一个variable
+ * 第二个参数是一个数值，或Tensor
+ 
 ## 初始化相关函数
  ```python
  def create_convolution_variable(name,shape):
@@ -215,6 +219,8 @@ update = optimizer.apply_grandient(zip(grads,train_vars))
     return variable
 def create_bias_variable(name,shape):
     initializer = tf.constant_initializer(value=0.,dtype=tf.float32)
+    
+
     return tf.Variable(initializer(shape=shape),name)
 
  ```
