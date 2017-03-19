@@ -266,3 +266,8 @@ def columns(array,index):
 ## embedding_lookup() 函数的陷阱
  * 支持1维变长，不支持2维变长，  
  * tf.nn.embedding_lookup(embedding,input) 当input是一个一维数组的时候可以是变长，二维数组每次必须是固定大小
+ 
+## tensorflow 指定运行
+* CUDA_VISIBLE_DEVICES="" python train.py  只用cpu
+* CUDA_VISIBLE_DEVICES="0" python train.py 只用gpu0
+* CUDA_VISIBLE_DEVICES="0,1" python train.py 用gpu 0 1
