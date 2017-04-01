@@ -34,9 +34,11 @@ for i in range(len(hidden)):
 ##获取维度
   * variant.get_shape().as_list()
   * variant.get_shape().with_rank_at_least(3) 维度至少为3
+  
   *  variant.get_shape().with_rank(2)[1].value()   Returns a shape based on `self` with the given rank 比如
      variant是一个50*128 结果为128
-  * tf.while_loop(cond,body,loop_vars.....) cond 条件 ，body 函数， loop_vars 存储每步的变量以便下次迭代使用 
+  
+  * tf.while_loop(cond,body,loop_vars.....) cond 条件 ，body 函数， loop_vars 存储每步的变量以便下次迭代使用 
     在dynamic_rnn函数中看到。
   
 
