@@ -275,3 +275,4 @@ def columns(array,index):
 * CUDA_VISIBLE_DEVICES="" python train.py  只用cpu
 * CUDA_VISIBLE_DEVICES="0" python train.py 只用gpu0
 * CUDA_VISIBLE_DEVICES="0,1" python train.py 用gpu 0 1
+* os.environ["CUDA_VISIBLE_DEVICES"]=""
