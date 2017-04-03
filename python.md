@@ -42,7 +42,8 @@ name = x1.sheet_names
  * 同时选择行和列 obj.ix[val1,val2]
  * 属性 fill_value 填充缺失值 method = ffill or pad 前向填充 method = bfill or backfill 后向填充
  * df.fillna(val) 填充缺失值 可以是一个值，也可以是字典key是column名 value 是该列要填充的值
-
+ * 找出在id在list中的所有行 pd[pd['id'].isin(list)]
+ 
 ##pandas 删除行
  * 假如DataFrame v有一列叫pid 有一个list 保留出现在list中的pid的那些行
   v[v.pid.isin(list)]
