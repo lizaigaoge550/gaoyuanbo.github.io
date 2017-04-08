@@ -1,4 +1,4 @@
- ##　模块名:小写字母，单词之间用_分割 ad_stats.py
+ ## 模块名:小写字母，单词之间用_分割 ad_stats.py
  ##  包名：和模块名一样
  ##  类名: 单词首字母大写: Adststs, ConfigUtil
  ##  全局变量: NUMBER, CLOR_WRITE
