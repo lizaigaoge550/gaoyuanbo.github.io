@@ -29,9 +29,14 @@ name = x1.sheet_names
   * pandas.DataFrame.to_csv(dataframe,outputfile) note:要想把一个数组保存到csv 这个数组得先转化成DataFrame 用 pd.DataFrame(arr)
     
     * index = False 不要行索引
+    
     * header=False 不要列名
-    * 给列指定名字 header=["",""]
-    * 给index指定名字 index_label=""
+    
+    * 给列指定名字 header=["",""]
+    
+    * 给index指定名字 index_label=""
+    
+    * seq 相当于 delimiter
   
   * pandas.from_dict(dict,orient = "columns") orient = 'columns'是key作为列 'rows'key作为行
 修改列名 DataFrame.columns = ['','']必须是list
