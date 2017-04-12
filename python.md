@@ -22,20 +22,12 @@ usecols 来选择列 dtype选择数据类型
     * index_col=False 不要用第一列作为索引
     * skiprows list or integer
     * nrows int
-  * x1 = pandas.ExcelFile(filename)
-name = x1.sheet_names
-在解析x1.parse(name[..])
-参数和csv类似
+  * x1 = pandas.ExcelFile(filename) name = x1.sheet_names,在解析x1.parse(name[..]),参数和csv类似
   * pandas.DataFrame.to_csv(dataframe,outputfile) note:要想把一个数组保存到csv 这个数组得先转化成DataFrame 用 pd.DataFrame(arr)
-    
     * index = False 不要行索引
-    
     * header=False 不要列名
-    
     * 给列指定名字 header=["",""]
-    
     * 给index指定名字 index_label=""
-    
     * seq 相当于 delimiter
   
   * pandas.from_dict(dict,orient = "columns") orient = 'columns'是key作为列 'rows'key作为行
