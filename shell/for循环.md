@@ -31,3 +31,14 @@ done
   ....note: 文件路径为$dir'/'$f
   done
 ```
+
+## 循环遍历一个文件夹下所有文件,并且按"/"切分字符串
+```python
+#!bin/sh
+for file in filter_blank/*
+do
+    f=`echo $file | cut -d "/" -f 2`
+    #echo $f
+    python /home/liuxe/share/tools/text_pre/remove_punc.py $file /home/liuxe/share/dataset/medical_data/ws/ltp/topwords/filter_punc/$f
+done
+```
