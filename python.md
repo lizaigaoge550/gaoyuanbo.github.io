@@ -85,6 +85,8 @@ usecols 来选择列 dtype选择数据类型
 ##python正则表达式
 * re.split('\\s+',字符串)
 * 找到一个字符串中所有数字 re.findall('[0-9]+',string)
+* 寻找一个字符串中的数字 re.search(r'\d+',string)
+
 
 ##pandas as pd 操作
 * pd.read_csv().values仅仅只会忽略第一行，不会忽略第一列
