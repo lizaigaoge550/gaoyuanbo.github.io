@@ -7,7 +7,7 @@ with attentive recurrent neural networks)(Abstractive text summarization
 using sequence-to-sequence rnns and beyond)(Efficient summarization with
 read-again and copy mechanism)
 
-缺点:
+## 缺点:
 
 (Abstractive text summarization
 using sequence-to-sequence rnns and beyond) 运用了带有attention 的encoder-decoder 模型, 但是产生的段落里会伴有重复的信息
@@ -15,7 +15,7 @@ using sequence-to-sequence rnns and beyond) 运用了带有attention 的encoder-
 (Efficient summarization with
 read-again and copy mechanism) 基于MT 去产发生summary 仅仅关注短的文本，并没有在更复杂的文本上进行实验.
 
-解决了重复信息的问题
+## 解决了重复信息的问题
 
 (1)运用了attention 机制(但是写的挺好) 
 
