@@ -8,6 +8,14 @@
 
 (Neural summarization by extracting sentences and words) 提出了基于attention的encoder-decoder方法去完成signle-document summarizatoin.
 
+关注于句子的提取总结
+
+### 贡献
+
+(1) 一个简单的网络基于序列分类器, 可以加速训练
+
+(2) 一个新颖的训练机制, 运行我们的模型进行端到端的训练.
+
 
 
 
