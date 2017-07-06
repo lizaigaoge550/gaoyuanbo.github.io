@@ -1,5 +1,7 @@
 ## A Neural Attention Model for Sentence Summarization
 
+这篇文章没有过lstm， 直接embedding.
+
 运用基于attention 的encoder 以及 合并beam-search decoder还有一些额外的特征去建模
 
 ### 贡献
