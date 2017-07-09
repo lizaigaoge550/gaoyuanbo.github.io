@@ -29,6 +29,8 @@ through h1 ···ht−1 with an attention layer:
 
 ![iamge](Long Short-Term Memory-Networks for Machine Reading_1.png)
 
+### 这就是intra-attention
+
 
 
 
