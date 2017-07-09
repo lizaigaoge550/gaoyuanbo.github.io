@@ -23,4 +23,10 @@ Let xt denote the current input; Ct−1 = (c1,··· , ct−1) denotes the curre
 the previous hidden tape. At time step t, the model computes the relation between xt and x1 ··· xt−1
 through h1 ···ht−1 with an attention layer:
 
+![](http://latex.codecogs.com/gif.latex?a_i^{t}=v^{T}tanh(W_{h}h_{i}+W_{x}x_{t}+W_{\overline{h}}\overline{h}_{t-1}))
+
+![](http://latex.codecogs.com/gif.latex?s_{i}^{t}=softmax(a_{i}^{t}))
+
+
+
 
