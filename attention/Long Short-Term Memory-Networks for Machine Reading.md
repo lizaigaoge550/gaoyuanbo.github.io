@@ -27,6 +27,8 @@ through h1 ···ht−1 with an attention layer:
 
 ![](http://latex.codecogs.com/gif.latex?s_{i}^{t}=softmax(a_{i}^{t}))
 
+![iamge](Long Short-Term Memory-Networks for Machine Reading_1.png)
+
 
 
 
