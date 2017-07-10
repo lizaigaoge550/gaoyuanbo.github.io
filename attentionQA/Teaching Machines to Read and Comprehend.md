@@ -8,5 +8,9 @@
 
 ![](http://latex.codecogs.com/gif.latex?\overline(h_a(t))=h_a(t)s(t))
 
+### Impatient Reader
+
+
+
 
 
