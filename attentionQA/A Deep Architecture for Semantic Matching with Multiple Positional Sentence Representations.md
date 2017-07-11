@@ -7,5 +7,5 @@
 
 损失函数
 
-L()
+![](http://latex.codecogs.com/gif.latex?L(S_{X},S_{Y}^{+},S_{Y}^{-})=max(0,1-s(S_{x},S_{Y}^{+})+s(S_{x},S_{Y}^{-})) )
 
