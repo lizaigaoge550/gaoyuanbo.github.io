@@ -3,3 +3,5 @@
 求每个单词的最大后验概率, 
 
 ![iamge](TUASRN.png)
+
+![iamge](TUA.png)
