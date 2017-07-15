@@ -48,3 +48,7 @@
 ##描写
  * portray
  * descripe
+ 
+## 大量的数据
+* larget amount of data
+*  quantitative data
