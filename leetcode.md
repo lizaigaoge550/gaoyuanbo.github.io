@@ -47,3 +47,10 @@ Input: "zab"
 Output: 6
 Explanation: There are six substrings "z", "a", "b", "za", "ab", "zab" of string "zab" in the string s.
 ```
+## 413. Arithmetic Slices
+```
+A = [1, 2, 3, 4]
+
+return: 3, for 3 arithmetic slices in A: [1, 2, 3], [2, 3, 4] and [1, 2, 3, 4] itself.
+
+```
