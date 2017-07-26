@@ -41,3 +41,9 @@ Input: [23, 2, 6, 4, 7],  k=6
 Output: True
 Explanation: Because [23, 2, 6, 4, 7] is an continuous subarray of size 5 and sums up to 42.
 ```
+## 467. Unique Substrings in Wraparound String
+```
+Input: "zab"
+Output: 6
+Explanation: There are six substrings "z", "a", "b", "za", "ab", "zab" of string "zab" in the string s.
+```
