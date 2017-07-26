@@ -23,3 +23,9 @@ Given an array of n positive integers and a positive integer s, find the minimal
 For example, given the array [2,3,1,2,4,3] and s = 7,
 the subarray [4,3] has the minimal length under the problem constraint.
 ```
+##  80 Remove Duplicates from Sorted Array II
+```
+Given sorted array nums = [1,1,1,2,2,3],
+
+Your function should return length = 5, with the first five elements of nums being 1, 1, 2, 2 and 3. It doesn't matter what you leave beyond the new length.
+```
