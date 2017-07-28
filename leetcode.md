@@ -61,3 +61,8 @@ Output: false
 
 Explanation: You cannot find a way to form a square with all the matchsticks.
 ```
+## 207. Course Schedule
+```
+2, [[1,0]]
+2, [[1,0],[0,1]]
+```
