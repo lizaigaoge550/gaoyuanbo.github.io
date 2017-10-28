@@ -211,6 +211,9 @@ update = optimizer.apply_grandient(zip(grads,train_vars))
  * conv2d stride = [batch,overlapheight,overlapwidth,depth] batch 和 depth 为1， 
  * max_pool ksize=[batch,height,width,depth] batch depth=1 相当于 conv2d中的w
  
+ * 参数[5,5,1,25] 值[batch,28,28,1] , batch没用[5,5,1]和[28,28,1] 的最后一个维度要相同, 最后也就是卷[5,5]和[28,28]
+   25是最终的输出的channel, 也就是卷积的结果第一个dim是batch, 最后一个是channel,这个例子是(25).
+ 
 ## tf.assign
  * 第一个参数是一个variable
  * 第二个参数是一个数值，或Tensor
